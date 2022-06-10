@@ -1,0 +1,3586 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2022 5:32:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LENOVO-G40"
+  DTS:CreatorName="LENOVO-G40\alexd"
+  DTS:DTSID="{7ADA0022-39FF-48BF-8552-6F0E450335CB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{72123BB5-E9EF-47DB-9C1F-DACEC4CD2656}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{E9F46149-0AC4-45A4-9016-8C945F2FD3D2}"
+      DTS:ObjectName="Datamart.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADHaK8Sr44u/gYGbYDZL5xo+A9wbJmP9ukWmzvzWsdGmAAAAAAOgAAAAAIAACAAAADJUESanaHXhbQgr3GIEe/UgmGFvKljXOYi0t82JMetByAAAAA1egqWGXOIBe/UzVWrB0WkPLT6g3v5wAjGM9WGsqsvBkAAAABZWFGimD2WCORmjtTSMZFrcMkmevHvfwffTIDay8gEARKlxxVGVafy8dNrD0lGDeoMqhoX2RQUO0TSl4Wuc8pH</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 1]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{7B51CF4B-8C6B-4448-9AF4-B13C2D033FA6}"
+      DTS:ObjectName="Datamart.alex 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABLFsViAe4Le7NrN9BUne9g4vGIikJAbC0jwI1ruCUduAAAAAAOgAAAAAIAACAAAACNqhinxLYBZB84KTvUPYTWdVBEIkaB275fBJ4qdyf4hyAAAADyaNlvOPn8ef7yQzmAzKY2t6bTOS0XDwOenluxxVAIukAAAADkgFetReOv6iDuVNcBXdum+4rby9cQyGo25RyBmx3Wn1fjfN/ZeeK4o8k2Je90UxJAN/mCasjqydLVfmqUSMQb</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 2]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{BB08A83C-B962-4F97-A9DC-AB8347907687}"
+      DTS:ObjectName="Datamart.alex 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZyDaEZDq5klKe30YseflWIejN7/0Aj70pbEXLa+FZigAAAAAOgAAAAAIAACAAAADtory+r7Sf8ny2TDaFSNZyVieXtJLC6DP5fGtdCK/H9iAAAACpmDatKRdFtazW67+hSrVMgqVpsOePS2Ipier7/MygEUAAAABYFsOrdMjkOCuW378itHaviUVJzjDv46VGcr/F/DW+Y6VpuVlgWbLuEZiTw9FLMOwbXkKMujwb+KskAjLfEI4w</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 3]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{7E7CC7BF-73FA-4A30-B09A-8866E0430637}"
+      DTS:ObjectName="Datamart.alex 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADw41/uo+ubckoY2PGBfNz6Dw1q9VJ/TeFxgAXL97cAEQAAAAAOgAAAAAIAACAAAACo8sfXGwkUbL/v4/dv5fzvHUlVer22XtQCjyMr5itl6iAAAADWy/6LHoF911fkYarOvzHr6Hq69mhYPMuWvB/DBPRvvUAAAADbPbgHUWcqY55BUGm2i8jL0hpEDsIEikelnbC2QoRNuMPM4mVYPZMc7QPTniH+guTxE18xuOtCKRTjoUwqpmPs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 4]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{9AD1F88F-8409-428B-AF8B-9026289BAB60}"
+      DTS:ObjectName="Datamart.alex 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADPP+t59CBjMF4OykZ/r8Dpd3TsD+esfakXYQ3WVAUYjgAAAAAOgAAAAAIAACAAAAC8cQTKYsKW9Yu64BQbKuyFQAEsMCAGDyR3k86NPbRGQiAAAAD4gfO5ZboFLjT/wjMqrRbFQByWufvU9Fuj9n+E4itgvUAAAAB5HTkw6YMYkIjQDkLWwH/9xTsjeFDgTPVy47aqr+oczr1JIYQ/M1pi4z0kqtV6pbQogU4G3Xg6yi0u+Gc6wW7B</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 5]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{AF652BB1-A657-4303-936D-82638CA8372F}"
+      DTS:ObjectName="Datamart.alex 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6DwLeSW4HuZn9DtSQKfef5b1CZvGNiipFqDWYOis5GgAAAAAOgAAAAAIAACAAAABGxV/8InIP1kfi6IwWj0Y11OetnWWadUMqxEsTY6SSJSAAAACmpKpEpZH6KjRYxr1uBoeRoZzHt5XZE0GD+MxhNGZ1pEAAAACIeU3M51yPqDh3oA4yBR/d07r2gW7Q5MiSgcEs/9vKX0tvm2F0AYp6SqajZOtk9rR8CDgA858PLYRsFyTcqueQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart.alex 6]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{C0988D24-8EE7-4E80-BD3A-7146356B49B7}"
+      DTS:ObjectName="Datamart.alex 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACzExQn3nXY4Yhs8Ki8dSJ5GrQ/5vbOfHgv0rCVBIc0qwAAAAAOgAAAAAIAACAAAADAl8wHyluKpiBHR4BtunAokh267Zv3dtCAva4xwYe6oSAAAACofgzTGUfKDUyDfqlIDcymsuXMLcbeZOxP3AnBf3E7JUAAAACOn0y9C3GZaZ/cgUU6TS+RLEL3wjFRWHhTlPUEKO2WSdfLkJxHqfZS5IXZs1njV++eN5c+Ax/xOs5hmvW+bnYa</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Datamart2.alex]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{5A7F83D0-AE01-4EE9-B15A-1B73DF1F312F}"
+      DTS:ObjectName="Datamart2.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Datamart2;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABADar4iK2EnOIeXODZYbldvcqSPLJGBA57bYWwMuZ85QAAAAAOgAAAAAIAACAAAAD+9+ErlOkVArTk2DUNDyqSxD6DIybM61AMJFTMEEjyQiAAAACwAt6buBGT9UbMAORyWYgE2rGcnZgN1QFCC7YOXZFCL0AAAABGzrhQ4UemOKtqZQCi8p2pMu1O938H/ZUiCUgAqp8RA3GBD9D/XLOKrXZgvMcIUZYx8SpSxgpye1hXGhLD1bSn</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Hotel DataM.alex]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{32759E3C-633D-4F4A-8AB8-71CC39E1C5BB}"
+      DTS:ObjectName="Hotel DataM.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Hotel DataM;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADsdfb5O7najo8fZt/Z+AGt8BYtm9peEvtcgQ+c9fgU5gAAAAAOgAAAAAIAACAAAABnsQ5332U0Jud2cGQ9ecjoyW7HA2HNeydWS7Ap0gSY/iAAAABpiPHzDE8+s21KEXjRQl6ceE8BNQuOsPr+fKjg46WDr0AAAAD+zQ3udlQCYQqLR/9xHemgWGQDKW5Yzby6ZU9sXIZxtbCNr/d3XMBwkNfV66fqP3vHm6aHJ79zOkSn6jXArl2n</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Hotel Prod.alex]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{4346BF10-0581-4C06-9536-15A7836BC94D}"
+      DTS:ObjectName="Hotel Prod.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Hotel Prod;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUHIFkUdhnHAX24s1BEXiOdlHJBvQlzANe1xY7jnbdQwAAAAAOgAAAAAIAACAAAAA3X1EXOhowpSBkZnqCYBH5J01BLU5XY6htfsLF4jumFCAAAABCWjRNkR3TdfvqgQU4zEtb9guAnZYaM5getkuOKGi6IUAAAACvrN/1bkpAryIuWmBRdhSw8hgexyD47Ya59Vy2WBJY1IxWoywkoxFkxs7f7IT+zg7bEVaVfxSVGIGafoItRcIp</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Hotel Prod.alex 1]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{9F43F64F-A424-4517-B989-4B96D8AB59F1}"
+      DTS:ObjectName="Hotel Prod.alex 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Hotel Prod;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJAGYriO3stKzOoVo3tQEXHBH1fU9HifeEaq3l2vwa0AAAAAAOgAAAAAIAACAAAAAYHZEkerBRiaSrg+4ts/yxH0LbiuXf13imUINEG9EOSyAAAACUzzRrh1su/f5cLpRt86Uujf1j5ArNErH2MJ1yFSCP/0AAAACCb0EQ68FBQj7VDh7YsT5ptt5mPWqTqtmVhi0pPX8LpCTTLupoPf432nS2S4F3t0s5HmH1Wrh1xrcY0Aef4chd</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Hotel Datamart 2.alex]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0931697C-E4B1-4FF0-B0BA-2B5AD0478A01}"
+      DTS:ObjectName="localhost.Hotel Datamart 2.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=alex;Initial Catalog=Hotel Datamart 2;Provider=PGNP.1;Persist Security Info=True;Extended Properties=&quot;SSL=prefer;&quot;;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACzxOg5v6TtMYo/kHwEXhn9rjfOwwPYpxfeYny55BzGZgAAAAAOgAAAAAIAACAAAAD9CVAJP9w9whQyvR9edRrlWQ4hbwEAnmWyaad8kLk84iAAAADOuW949ICJoEq84adpEQ2OB9ucroTASqkgN/5sAppkHEAAAABUEpIT6TMNa/HpFYuMrxV3BtGwTaDCIuyNmS6xyyNJNmwT5KCsfdGxVrygV9XYRVbApcpFUeHuha64f+gibca8</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Hotel Produccion.alex]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{94C4EEF4-9F53-4DDE-85AD-027783846254}"
+      DTS:ObjectName="localhost.Hotel Produccion.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=alex;Initial Catalog=Hotel Produccion;Provider=PGNP.1;Persist Security Info=True;Extended Properties=&quot;SSL=prefer;&quot;;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABmvXy6WJCW8O+zKUzmX/U889oWo3D4w6k2hhL7wksxdAAAAAAOgAAAAAIAACAAAADBWgHxCTkOq/y9lUzFZ8/yAN7JNSbqS5k8fykQYI4PSCAAAAAmYh5KKSeO98mQJr1VBCh2whrLZ217rLnoGX5zXC4wZEAAAACfliCjWNVHLvIZs9bIXHnECvilXfcb362KExaEQom1x+DUWL59/xOuBk/zXrSJb3fmQVYrk0nVotf/2co1UijL</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Tutorial.alex]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{984B2C24-8D2B-4971-93A8-8C4374270050}"
+      DTS:ObjectName="Tutorial.alex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=alex;Dsn=Tutorial;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVWny8Cb0EOHdCXaEHlnOwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABx0GIDOBSAPw/yPi4RcxNdgI10Y9sy8RUFN45k2FQIjAAAAAAOgAAAAAIAACAAAACGYqiQquDLhnBksRfZJXMb7bwRwPE6MIRMHEN/0pyToiAAAAA/K8KWk9cQEXk0tQxExz6JC0Ll5LM5zcc4L3Ts2ZnXjEAAAABh4tRxz7iOwpp3mND98i0x7Cdt5KwRXSQoiDPSbK4yfjQL+NDlnsmDKwa70igCDeyP34YMBN1BQlaQLMb/J+oK</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\cliente"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2E0769A4-DAD8-4ADB-9C3B-C5FF99533036}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="cliente"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\cliente\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\cliente\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\cliente\Data Conversion.Inputs[Data Conversion Input].Columns[nombrehuesped]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="nombrehuesped"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[nombrehuesped]" />
+                    <inputColumn
+                      refId="Package\cliente\Data Conversion.Inputs[Data Conversion Input].Columns[generohuesped]"
+                      cachedDataType="wstr"
+                      cachedLength="23"
+                      cachedName="generohuesped"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[generohuesped]" />
+                    <inputColumn
+                      refId="Package\cliente\Data Conversion.Inputs[Data Conversion Input].Columns[ciudadhuesped]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ciudadhuesped"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[ciudadhuesped]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cliente\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\cliente\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of nombrehuesped]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of nombrehuesped]"
+                      name="Copy of nombrehuesped"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[nombrehuesped]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of generohuesped]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="23"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of generohuesped]"
+                      name="Copy of generohuesped"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[generohuesped]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ciudadhuesped]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ciudadhuesped]"
+                      name="Copy of ciudadhuesped"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[ciudadhuesped]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\cliente\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\cliente\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cliente\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cliente\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cliente\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."cliente"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cliente\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Datamart.alex 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Datamart.alex 3]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of nombrehuesped]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of nombrehuesped"
+                      externalMetadataColumnId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of nombrehuesped]" />
+                    <inputColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of generohuesped]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="23"
+                      cachedName="Copy of generohuesped"
+                      externalMetadataColumnId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ciudad]"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of generohuesped]" />
+                    <inputColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of ciudadhuesped]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Copy of ciudadhuesped"
+                      externalMetadataColumnId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[genero]"
+                      lineageId="Package\cliente\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ciudadhuesped]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[clienteid]"
+                      dataType="i4"
+                      name="clienteid" />
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="50"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ciudad]"
+                      dataType="wstr"
+                      length="100"
+                      name="ciudad" />
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[genero]"
+                      dataType="wstr"
+                      length="23"
+                      name="genero" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cliente\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cliente\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cliente\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cliente\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cliente\ODBC Source"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct nombrehuesped,  ciudadhuesped, generohuesped from huesped</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cliente\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hotel Prod.alex]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hotel Prod.alex]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[nombrehuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[nombrehuesped]"
+                      length="50"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[nombrehuesped]"
+                      name="nombrehuesped" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[generohuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[generohuesped]"
+                      length="23"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[generohuesped]"
+                      name="generohuesped" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[ciudadhuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ciudadhuesped]"
+                      length="100"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].Columns[ciudadhuesped]"
+                      name="ciudadhuesped" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[nombrehuesped]"
+                      dataType="wstr"
+                      length="50"
+                      name="nombrehuesped" />
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[generohuesped]"
+                      dataType="wstr"
+                      length="23"
+                      name="generohuesped" />
+                    <externalMetadataColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ciudadhuesped]"
+                      dataType="wstr"
+                      length="100"
+                      name="ciudadhuesped" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[nombrehuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[nombrehuesped]"
+                      length="50"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[nombrehuesped]"
+                      name="nombrehuesped" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[generohuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[generohuesped]"
+                      length="23"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[generohuesped]"
+                      name="generohuesped" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ciudadhuesped]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\cliente\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ciudadhuesped]"
+                      length="100"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ciudadhuesped]"
+                      name="ciudadhuesped" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cliente\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\cliente.Paths[Data Conversion Output]"
+              endId="Package\cliente\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\cliente\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\cliente.Paths[ODBC Source Output]"
+              endId="Package\cliente\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\cliente\ODBC Source.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\estancia"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{71420804-B4B3-41A6-9F5D-CA5209ED25F6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="estancia"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\estancia\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input].Columns[clienteid]"
+                      cachedDataType="i4"
+                      cachedName="clienteid"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[clienteid]" />
+                    <inputColumn
+                      refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input].Columns[pagoid]"
+                      cachedDataType="i4"
+                      cachedName="pagoid"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[pagoid]" />
+                    <inputColumn
+                      refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input].Columns[tiempoid]"
+                      cachedDataType="i4"
+                      cachedName="tiempoid"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[tiempoid]" />
+                    <inputColumn
+                      refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input].Columns[habitacionid]"
+                      cachedDataType="i4"
+                      cachedName="habitacionid"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[habitacionid]" />
+                    <inputColumn
+                      refId="Package\estancia\Data Conversion.Inputs[Data Conversion Input].Columns[valortotal]"
+                      cachedDataType="numeric"
+                      cachedName="valortotal"
+                      cachedPrecision="8"
+                      cachedScale="2"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[valortotal]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\estancia\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of clienteid]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of clienteid]"
+                      name="Copy of clienteid"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[clienteid]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pagoid]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pagoid]"
+                      name="Copy of pagoid"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[pagoid]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tiempoid]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tiempoid]"
+                      name="Copy of tiempoid"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[tiempoid]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of habitacionid]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of habitacionid]"
+                      name="Copy of habitacionid"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[habitacionid]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of valortotal]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of valortotal]"
+                      name="Copy of valortotal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[valortotal]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\estancia\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\estancia\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\estancia\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\estancia\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."estancia"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\estancia\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Datamart.alex]"
+                  connectionManagerRefId="Package.ConnectionManagers[Datamart.alex]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of pagoid]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of pagoid"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[pagoid]"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pagoid]" />
+                    <inputColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of clienteid]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of clienteid"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[clienteid]"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of clienteid]" />
+                    <inputColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of tiempoid]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of tiempoid"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempoid]"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tiempoid]" />
+                    <inputColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of habitacionid]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of habitacionid"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[habitacionid]"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of habitacionid]" />
+                    <inputColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of valortotal]"
+                      cachedDataType="r8"
+                      cachedName="Copy of valortotal"
+                      externalMetadataColumnId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[precio]"
+                      lineageId="Package\estancia\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of valortotal]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[clienteid]"
+                      dataType="i4"
+                      name="clienteid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[pagoid]"
+                      dataType="i4"
+                      name="pagoid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempoid]"
+                      dataType="i4"
+                      name="tiempoid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[habitacionid]"
+                      dataType="i4"
+                      name="habitacionid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[precio]"
+                      dataType="numeric"
+                      name="precio"
+                      precision="8"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\estancia\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\estancia\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\estancia\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\estancia\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\estancia\ODBC Source"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select cl1.clienteid, pa1.pagoid, ti1.tiempoid, ha1.habitacionid, f1.valortotal
+from estancia as e1 inner join habitacion as h1 on e1.idhabitacion = h1.idhabitacion
+					inner join huesped as h2 on e1.idhuesped = h2.idhuesped
+					inner join factura as f1 on e1.idfactura = f1.idfactura
+					inner join dblink('host=localhost dbname=Datamart user=alex password=Elizabeth2102',
+							   $$ SELECT habitacionid, numero FROM habitacion $$) AS ha1 
+							   (habitacionid int, numero varchar(4) ) 
+							   ON h1.numerohabitacion = ha1.numero
+					inner join dblink('host=localhost dbname=Datamart user=alex password=Elizabeth2102',
+							   $$ SELECT clienteid, nombre FROM cliente $$) AS cl1 
+							   (clienteid int, nombre varchar(50) ) 
+							   ON h2.nombrehuesped = cl1.nombre
+					inner join dblink('host=localhost dbname=Datamart user=alex password=Elizabeth2102',
+							   $$ SELECT pagoid, tipo FROM pago $$) AS pa1 
+							   (pagoid int, tipo varchar(50) ) 
+							   ON f1.tipofactura = pa1.tipo
+					inner join dblink('host=localhost dbname=Datamart user=alex password=Elizabeth2102',
+							   $$ SELECT tiempoid, fecha FROM tiempo $$) AS ti1 
+							   (tiempoid int, fecha date ) 
+							   ON f1.fechafactura = ti1.fecha</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\estancia\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hotel Prod.alex 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hotel Prod.alex 1]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[clienteid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[clienteid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[clienteid]"
+                      name="clienteid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[pagoid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[pagoid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[pagoid]"
+                      name="pagoid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[tiempoid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tiempoid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[tiempoid]"
+                      name="tiempoid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[habitacionid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[habitacionid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[habitacionid]"
+                      name="habitacionid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[valortotal]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[valortotal]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].Columns[valortotal]"
+                      name="valortotal"
+                      precision="8"
+                      scale="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[clienteid]"
+                      dataType="i4"
+                      name="clienteid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[pagoid]"
+                      dataType="i4"
+                      name="pagoid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tiempoid]"
+                      dataType="i4"
+                      name="tiempoid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[habitacionid]"
+                      dataType="i4"
+                      name="habitacionid" />
+                    <externalMetadataColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[valortotal]"
+                      dataType="numeric"
+                      name="valortotal"
+                      precision="8"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[clienteid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[clienteid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[clienteid]"
+                      name="clienteid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[pagoid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[pagoid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[pagoid]"
+                      name="pagoid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[tiempoid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tiempoid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[tiempoid]"
+                      name="tiempoid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[habitacionid]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[habitacionid]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[habitacionid]"
+                      name="habitacionid" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[valortotal]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\estancia\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[valortotal]"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[valortotal]"
+                      name="valortotal"
+                      precision="8"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\estancia\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\estancia.Paths[Data Conversion Output]"
+              endId="Package\estancia\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\estancia\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\estancia.Paths[ODBC Source Output]"
+              endId="Package\estancia\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\estancia\ODBC Source.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\habitacion"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{351667D2-7D1B-4614-9713-A9AE5ED07B62}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="habitacion"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\habitacion\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input].Columns[tipohabitacion]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="tipohabitacion"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[tipohabitacion]" />
+                    <inputColumn
+                      refId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input].Columns[numerohabitacion]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="numerohabitacion"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[numerohabitacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipohabitacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipohabitacion]"
+                      name="Copy of tipohabitacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[tipohabitacion]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of numerohabitacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="4"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of numerohabitacion]"
+                      name="Copy of numerohabitacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[numerohabitacion]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\habitacion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\habitacion\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."habitacion"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\habitacion\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Datamart.alex 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Datamart.alex 2]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of tipohabitacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of tipohabitacion"
+                      externalMetadataColumnId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tipo]"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipohabitacion]" />
+                    <inputColumn
+                      refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of numerohabitacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Copy of numerohabitacion"
+                      externalMetadataColumnId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[numero]"
+                      lineageId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of numerohabitacion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[habitacionid]"
+                      dataType="i4"
+                      name="habitacionid" />
+                    <externalMetadataColumn
+                      refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tipo]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipo" />
+                    <externalMetadataColumn
+                      refId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[numero]"
+                      dataType="wstr"
+                      length="4"
+                      name="numero" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\habitacion\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\habitacion\ODBC Source"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."habitacion"</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct tipohabitacion, numerohabitacion from habitacion</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\habitacion\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hotel Prod.alex]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hotel Prod.alex]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[tipohabitacion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipohabitacion]"
+                      length="50"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[tipohabitacion]"
+                      name="tipohabitacion" />
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[numerohabitacion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[numerohabitacion]"
+                      length="4"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].Columns[numerohabitacion]"
+                      name="numerohabitacion" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipohabitacion]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipohabitacion" />
+                    <externalMetadataColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[numerohabitacion]"
+                      dataType="wstr"
+                      length="4"
+                      name="numerohabitacion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[tipohabitacion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipohabitacion]"
+                      length="50"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[tipohabitacion]"
+                      name="tipohabitacion" />
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[numerohabitacion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[numerohabitacion]"
+                      length="4"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[numerohabitacion]"
+                      name="numerohabitacion" />
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\habitacion\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\habitacion.Paths[Data Conversion Output]"
+              endId="Package\habitacion\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\habitacion\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\habitacion.Paths[ODBC Source Output]"
+              endId="Package\habitacion\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\habitacion\ODBC Source.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpieza"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B2339D11-73F7-4250-8A40-A76202BA0E0C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpieza"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{E9F46149-0AC4-45A4-9016-8C945F2FD3D2}"
+          SQLTask:SqlStatementSource="truncate table habitacion restart identity cascade;&#xA;truncate table cliente restart identity cascade;&#xA;truncate table pago restart identity cascade;&#xA;truncate table tiempo restart identity cascade;&#xA;truncate table estancia restart identity cascade;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\pago"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{623599AE-3DFB-41A0-BFC5-757E08263356}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="pago"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\pago\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\pago\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\pago\Data Conversion.Inputs[Data Conversion Input].Columns[tipofactura]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="tipofactura"
+                      lineageId="Package\pago\ODBC Source.Outputs[ODBC Source Output].Columns[tipofactura]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\pago\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\pago\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pago\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipofactura]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\pago\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipofactura]"
+                      name="Copy of tipofactura"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\pago\ODBC Source.Outputs[ODBC Source Output].Columns[tipofactura]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\pago\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\pago\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pago\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pago\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pago\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pago\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\pago\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."pago"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pago\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Datamart.alex 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Datamart.alex 4]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of tipofactura]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of tipofactura"
+                      externalMetadataColumnId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tipo]"
+                      lineageId="Package\pago\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tipofactura]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[pagoid]"
+                      dataType="i4"
+                      name="pagoid" />
+                    <externalMetadataColumn
+                      refId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tipo]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\pago\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pago\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pago\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pago\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pago\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\pago\ODBC Source"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct tipofactura from factura</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pago\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hotel Prod.alex]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hotel Prod.alex]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\pago\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pago\ODBC Source.Outputs[ODBC Source Output].Columns[tipofactura]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\pago\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipofactura]"
+                      length="50"
+                      lineageId="Package\pago\ODBC Source.Outputs[ODBC Source Output].Columns[tipofactura]"
+                      name="tipofactura" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pago\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipofactura]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipofactura" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[tipofactura]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\pago\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[tipofactura]"
+                      length="50"
+                      lineageId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[tipofactura]"
+                      name="tipofactura" />
+                    <outputColumn
+                      refId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pago\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\pago.Paths[Data Conversion Output]"
+              endId="Package\pago\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\pago\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\pago.Paths[ODBC Source Output]"
+              endId="Package\pago\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\pago\ODBC Source.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\tiempo"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C7DA6A08-4ABA-4AE0-851C-ED3BBDA984B5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="tiempo"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\tiempo\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input].Columns[fecha]"
+                      cachedDataType="dbDate"
+                      cachedName="fecha"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[fecha]" />
+                    <inputColumn
+                      refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input].Columns[anio]"
+                      cachedDataType="r8"
+                      cachedName="anio"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[anio]" />
+                    <inputColumn
+                      refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input].Columns[trimestre]"
+                      cachedDataType="r8"
+                      cachedName="trimestre"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[trimestre]" />
+                    <inputColumn
+                      refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input].Columns[mes]"
+                      cachedDataType="r8"
+                      cachedName="mes"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[mes]" />
+                    <inputColumn
+                      refId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input].Columns[dia]"
+                      cachedDataType="r8"
+                      cachedName="dia"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[dia]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of fecha]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of fecha]"
+                      name="Copy of fecha"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[fecha]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of anio]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of anio]"
+                      name="Copy of anio"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[anio]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trimestre]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trimestre]"
+                      name="Copy of trimestre"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[trimestre]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of mes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of mes]"
+                      name="Copy of mes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[mes]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of dia]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of dia]"
+                      name="Copy of dia"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[dia]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\tiempo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\tiempo\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."tiempo"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\tiempo\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Datamart.alex 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Datamart.alex 5]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of fecha]"
+                      cachedDataType="dbDate"
+                      cachedName="Copy of fecha"
+                      externalMetadataColumnId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[fecha]"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of fecha]" />
+                    <inputColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of anio]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of anio"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ano]"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of anio]" />
+                    <inputColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of trimestre]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of trimestre"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[trimestre]"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trimestre]" />
+                    <inputColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of mes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Copy of mes"
+                      externalMetadataColumnId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[mes]"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of mes]" />
+                    <inputColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[Copy of dia]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of dia"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[dia]"
+                      lineageId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of dia]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempoid]"
+                      dataType="i4"
+                      name="tiempoid" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[fecha]"
+                      dataType="dbDate"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ano]"
+                      dataType="i4"
+                      name="ano" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[trimestre]"
+                      dataType="i4"
+                      name="trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[mes]"
+                      dataType="wstr"
+                      length="20"
+                      name="mes" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[dia]"
+                      dataType="i4"
+                      name="dia" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\tiempo\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\tiempo\ODBC Source"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="ODBC Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct 
+TO_DATE( cast(fechafactura as text),'YYYY-MM-DD') as fecha
+,extract(year from fechafactura) as anio
+,extract(quarter from fechafactura) as trimestre
+,extract(month from fechafactura) as mes
+,extract(day from fechafactura) as dia 
+from factura</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\tiempo\ODBC Source.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Hotel Prod.alex]"
+                  connectionManagerRefId="Package.ConnectionManagers[Hotel Prod.alex]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[fecha]"
+                      dataType="dbDate"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[fecha]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[fecha]"
+                      name="fecha" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[anio]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[anio]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[anio]"
+                      name="anio" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[trimestre]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[trimestre]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[trimestre]"
+                      name="trimestre" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[mes]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[mes]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[mes]"
+                      name="mes" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[dia]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[dia]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].Columns[dia]"
+                      name="dia" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[fecha]"
+                      dataType="dbDate"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[anio]"
+                      dataType="r8"
+                      name="anio" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[trimestre]"
+                      dataType="r8"
+                      name="trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[mes]"
+                      dataType="r8"
+                      name="mes" />
+                    <externalMetadataColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[dia]"
+                      dataType="r8"
+                      name="dia" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[fecha]"
+                      dataType="dbDate"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[fecha]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[fecha]"
+                      name="fecha" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[anio]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[anio]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[anio]"
+                      name="anio" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[trimestre]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[trimestre]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[trimestre]"
+                      name="trimestre" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[mes]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[mes]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[mes]"
+                      name="mes" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[dia]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[dia]"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[dia]"
+                      name="dia" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\tiempo\ODBC Source.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\tiempo.Paths[Data Conversion Output]"
+              endId="Package\tiempo\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\tiempo\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\tiempo.Paths[ODBC Source Output]"
+              endId="Package\tiempo\Data Conversion.Inputs[Data Conversion Input]"
+              name="ODBC Source Output"
+              startId="Package\tiempo\ODBC Source.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{90444420-2738-4E3C-9A96-F78AD99A0041}"
+      DTS:From="Package\Limpieza"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\habitacion" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{93CA4085-F0F0-403E-9615-04B4D1CBB038}"
+      DTS:From="Package\Limpieza"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\cliente" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{593C33FE-2CA6-4EA6-992A-FDFB53A2BE0F}"
+      DTS:From="Package\Limpieza"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\pago" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{6E296A29-4BA7-4D5B-AE50-486A1ACC5BA7}"
+      DTS:From="Package\Limpieza"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\tiempo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{300429C7-432B-4668-B709-1E700C10436C}"
+      DTS:From="Package\habitacion"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\estancia" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{60C877D8-E564-401B-8437-1F95E769AF7A}"
+      DTS:From="Package\cliente"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\estancia" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{80AC3394-A09F-4B66-8AA3-A5F6BBDCBE77}"
+      DTS:From="Package\pago"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\estancia" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{9D3FF17E-B546-4B01-A2EE-3153D9083579}"
+      DTS:From="Package\tiempo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\estancia" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="110,42"
+          Id="Package\cliente"
+          TopLeft="261,179" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\habitacion"
+          TopLeft="115,176" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Limpieza"
+          TopLeft="324,38" />
+        <NodeLayout
+          Size="102,42"
+          Id="Package\pago"
+          TopLeft="383,178" />
+        <NodeLayout
+          Size="111,42"
+          Id="Package\tiempo"
+          TopLeft="502,180" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="350.4,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171.9,96"
+              Start="0,0"
+              End="-171.9,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.3333333333333"
+                    Point2="0,29.3333333333333"
+                    Point3="-4,29.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-167.9,29.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167.9,29.3333333333333"
+                    Point2="-171.9,29.3333333333333"
+                    Point3="-171.9,33.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-171.9,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="372.8,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-56.8,99"
+              Start="0,0"
+              End="-56.8,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.4044117647059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.4044117647059"
+                    Point2="0,44.4044117647059"
+                    Point3="-4,44.4044117647059" />
+                  <mssgle:LineSegment
+                    End="-52.8,44.4044117647059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-52.8,44.4044117647059"
+                    Point2="-56.8,44.4044117647059"
+                    Point3="-56.8,48.4044117647059" />
+                  <mssgle:LineSegment
+                    End="-56.8,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="395.2,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.8,98"
+              Start="0,0"
+              End="38.8,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.9558823529412" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.9558823529412"
+                    Point2="0,43.9558823529412"
+                    Point3="4,43.9558823529412" />
+                  <mssgle:LineSegment
+                    End="34.8,43.9558823529412" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.8,43.9558823529412"
+                    Point2="38.8,43.9558823529412"
+                    Point3="38.8,47.9558823529412" />
+                  <mssgle:LineSegment
+                    End="38.8,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="417.6,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.9,100"
+              Start="0,0"
+              End="139.9,92.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5555555555555"
+                    Point2="0,30.5555555555555"
+                    Point3="4,30.5555555555555" />
+                  <mssgle:LineSegment
+                    End="135.9,30.5555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.9,30.5555555555555"
+                    Point2="139.9,30.5555555555555"
+                    Point3="139.9,34.5555555555555" />
+                  <mssgle:LineSegment
+                    End="139.9,92.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="117,42"
+          Id="Package\estancia"
+          TopLeft="328,352" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="178.5,218">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175.3,134"
+              Start="0,0"
+              End="175.3,126.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.9893238434164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.9893238434164"
+                    Point2="0,92.9893238434164"
+                    Point3="4,92.9893238434164" />
+                  <mssgle:LineSegment
+                    End="171.3,92.9893238434164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171.3,92.9893238434164"
+                    Point2="175.3,92.9893238434164"
+                    Point3="175.3,96.9893238434164" />
+                  <mssgle:LineSegment
+                    End="175.3,126.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="316,221">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="59.6,131"
+              Start="0,0"
+              End="59.6,123.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.2290292177191" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68.2290292177191"
+                    Point2="0,72.2290292177191"
+                    Point3="4,72.2290292177191" />
+                  <mssgle:LineSegment
+                    End="55.6,72.2290292177191" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55.6,72.2290292177191"
+                    Point2="59.6,72.2290292177191"
+                    Point3="59.6,76.2290292177191" />
+                  <mssgle:LineSegment
+                    End="59.6,123.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="434,220">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-36.6,132"
+              Start="0,0"
+              End="-36.6,124.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.7803958529689" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68.7803958529689"
+                    Point2="0,72.7803958529689"
+                    Point3="-4,72.7803958529689" />
+                  <mssgle:LineSegment
+                    End="-32.6,72.7803958529689" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.6,72.7803958529689"
+                    Point2="-36.6,72.7803958529689"
+                    Point3="-36.6,76.7803958529689" />
+                  <mssgle:LineSegment
+                    End="-36.6,124.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="557.5,222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-138.3,130"
+              Start="0,0"
+              End="-138.3,122.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,86.2135231316726" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,86.2135231316726"
+                    Point2="0,90.2135231316726"
+                    Point3="-4,90.2135231316726" />
+                  <mssgle:LineSegment
+                    End="-134.3,90.2135231316726" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-134.3,90.2135231316726"
+                    Point2="-138.3,90.2135231316726"
+                    Point3="-138.3,94.2135231316726" />
+                  <mssgle:LineSegment
+                    End="-138.3,122.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\cliente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\cliente\ODBC Destination"
+          TopLeft="539,282" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\cliente\Data Conversion"
+          TopLeft="366,184" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\cliente\ODBC Source"
+          TopLeft="101,103" />
+        <EdgeLayout
+          Id="Package\cliente.Paths[ODBC Source Output]"
+          TopLeft="172,145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="272,39"
+              Start="0,0"
+              End="272,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5"
+                    Point2="0,19.5"
+                    Point3="4,19.5" />
+                  <mssgle:LineSegment
+                    End="268,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="268,19.5"
+                    Point2="272,19.5"
+                    Point3="272,23.5" />
+                  <mssgle:LineSegment
+                    End="272,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\cliente.Paths[Data Conversion Output]"
+          TopLeft="444,226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="176.5,56"
+              Start="0,0"
+              End="176.5,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="4,28" />
+                  <mssgle:LineSegment
+                    End="172.5,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="172.5,28"
+                    Point2="176.5,28"
+                    Point3="176.5,32" />
+                  <mssgle:LineSegment
+                    End="176.5,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\cliente\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\cliente\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\habitacion">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\habitacion\ODBC Destination"
+          TopLeft="487,264" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\habitacion\ODBC Source"
+          TopLeft="30,23" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\habitacion\Data Conversion"
+          TopLeft="252,145" />
+        <EdgeLayout
+          Id="Package\habitacion.Paths[ODBC Source Output]"
+          TopLeft="101,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="229,80"
+              Start="0,0"
+              End="229,72.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36"
+                    Point2="0,40"
+                    Point3="4,40" />
+                  <mssgle:LineSegment
+                    End="225,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="225,40"
+                    Point2="229,40"
+                    Point3="229,44" />
+                  <mssgle:LineSegment
+                    End="229,72.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\habitacion.Paths[Data Conversion Output]"
+          TopLeft="330,187">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="238.5,77"
+              Start="0,0"
+              End="238.5,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="234.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="234.5,38.5"
+                    Point2="238.5,38.5"
+                    Point3="238.5,42.5" />
+                  <mssgle:LineSegment
+                    End="238.5,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\habitacion\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\habitacion\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\pago">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\pago\ODBC Destination"
+          TopLeft="431,312" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\pago\ODBC Source"
+          TopLeft="99,83" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\pago\Data Conversion"
+          TopLeft="317,186" />
+        <EdgeLayout
+          Id="Package\pago.Paths[ODBC Source Output]"
+          TopLeft="170,125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="225,61"
+              Start="0,0"
+              End="225,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="4,30.5" />
+                  <mssgle:LineSegment
+                    End="221,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="221,30.5"
+                    Point2="225,30.5"
+                    Point3="225,34.5" />
+                  <mssgle:LineSegment
+                    End="225,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\pago.Paths[Data Conversion Output]"
+          TopLeft="395,228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.5,84"
+              Start="0,0"
+              End="117.5,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="113.5,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113.5,42"
+                    Point2="117.5,42"
+                    Point3="117.5,46" />
+                  <mssgle:LineSegment
+                    End="117.5,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\pago\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\pago\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\tiempo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="142,42"
+          Id="Package\tiempo\ODBC Source"
+          TopLeft="47,51" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\tiempo\Data Conversion"
+          TopLeft="304,164" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\tiempo\ODBC Destination"
+          TopLeft="566,280" />
+        <EdgeLayout
+          Id="Package\tiempo.Paths[ODBC Source Output]"
+          TopLeft="118,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="264,71"
+              Start="0,0"
+              End="264,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
+                  <mssgle:LineSegment
+                    End="260,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="260,35.5"
+                    Point2="264,35.5"
+                    Point3="264,39.5" />
+                  <mssgle:LineSegment
+                    End="264,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\tiempo.Paths[Data Conversion Output]"
+          TopLeft="382,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="265.5,74"
+              Start="0,0"
+              End="265.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="261.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="261.5,37"
+                    Point2="265.5,37"
+                    Point3="265.5,41" />
+                  <mssgle:LineSegment
+                    End="265.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\tiempo\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\tiempo\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\estancia">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\estancia\ODBC Destination"
+          TopLeft="525,292" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\estancia\ODBC Source"
+          TopLeft="104,100" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\estancia\Data Conversion"
+          TopLeft="348,202" />
+        <EdgeLayout
+          Id="Package\estancia.Paths[ODBC Source Output]"
+          TopLeft="175,142">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="251,60"
+              Start="0,0"
+              End="251,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="247,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="247,30"
+                    Point2="251,30"
+                    Point3="251,34" />
+                  <mssgle:LineSegment
+                    End="251,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\estancia.Paths[Data Conversion Output]"
+          TopLeft="426,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180.5,48"
+              Start="0,0"
+              End="180.5,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="4,24" />
+                  <mssgle:LineSegment
+                    End="176.5,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176.5,24"
+                    Point2="180.5,24"
+                    Point3="180.5,28" />
+                  <mssgle:LineSegment
+                    End="180.5,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\estancia\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\estancia\ODBC Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

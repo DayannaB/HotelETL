@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Hotel Datamart", "Hotel Datamart.dtproj", "{DADE0E58-91C8-4E5F-A8AF-258A5CD9CB47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DADE0E58-91C8-4E5F-A8AF-258A5CD9CB47}.Development|Default.ActiveCfg = Development
+		{DADE0E58-91C8-4E5F-A8AF-258A5CD9CB47}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4B92D8D-46DA-4772-B69A-3CA688DE513B}
+	EndGlobalSection
+EndGlobal
